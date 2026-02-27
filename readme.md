@@ -48,31 +48,30 @@
 
 ## 五、补充文件说明
 
-1. 原始数据集（ESC-50_classified、ESC-50_origin、MSCOCO_classified、MSCOCO_origin）及其用imagebind生成的特征向量（img_text_feature），网盘链接：
+原始数据集（ESC-50_classified、ESC-50_origin、MSCOCO_classified、MSCOCO_origin）及其用imagebind生成的特征向量（img_text_feature），网盘链接：
 
-   文件结构：
+文件结构：
 
-   imagebind_multimodel
-
-   │  ...
-   │  
-   └─dataset
-       │  audio_feature
-       │  audio_feature.json
-       │  audio_hash_code
-       │  enIMI_audio_32_4.pkl
-       │  enIMI_image_32_4.pkl
-       │  enIMI_text_32_4.pkl
-       │  image_text_hash_code
-       │  IMI_text_32_4_.pkl
-       │  IMI_audio_32_4_.pkl
-       │  IMI_image_32_4_.pkl
-       │  img_text_feature
-       │  
-       ├─ESC-50_classified
-       ├─ESC-50_origin
-       ├─MSCOCO_classified
-       └─MSCOCO_origin
-
-2. 
+```bash
+imagebind_multimodel
+│  ...
+│  
+└─dataset
+    │  audio_feature
+    │  audio_feature.json
+    │  audio_hash_code
+    │  enIMI_audio_32_4.pkl
+    │  enIMI_image_32_4.pkl
+    │  enIMI_text_32_4.pkl
+    │  image_text_hash_code
+    │  IMI_text_32_4_.pkl
+    │  IMI_audio_32_4_.pkl
+    │  IMI_image_32_4_.pkl
+    │  img_text_feature
+    │  
+    ├─ESC-50_classified
+    ├─ESC-50_origin
+    ├─MSCOCO_classified
+    └─MSCOCO_origin
+```
 

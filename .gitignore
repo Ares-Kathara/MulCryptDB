@@ -39,7 +39,24 @@ instance/
 Thumbs.db
 desktop.ini
 
-# 7. 特定大数据文件 (必须忽略)
+# 7.C/C++ 编译产物 (必须忽略)
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 8. 特定大数据文件 (必须忽略)
 # ImageBind 生成的 6.4GB 特征文件
 imagebind_multimodel/dataset/img_text_feature
 # 原始图片和音频文件夹 (网盘下载)
@@ -48,6 +65,6 @@ imagebind_multimodel/dataset/ESC-50_origin/
 imagebind_multimodel/dataset/MSCOCO_classified/
 imagebind_multimodel/dataset/MSCOCO_origin/
 
-# 8. 豁免清单 (这里的文件即使上面屏蔽了，也会强制上传)
+# 9. 豁免清单 (这里的文件即使上面屏蔽了，也会强制上传)
 # 上传自己训练的 MLP 哈希模型 (虽然上面屏蔽了 *.pth，但这行会让它们被上传)
 !imagebind_multimodel/hash_model_save/*.pth
