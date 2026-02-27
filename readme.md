@@ -46,9 +46,51 @@
 
 ### 2. 后端环境（待补充）
 
-## 五、补充文件说明
+## 五、使用说明
 
-原始数据集（ESC-50_classified、ESC-50_origin、MSCOCO_classified、MSCOCO_origin）及其用imagebind生成的特征向量（img_text_feature），网盘链接：
+### 1.安装依赖：
+
+提供了requirements.txt和environment.yml两种依赖安装表，前者用于pip，后者用于conda。但是后者是根据开发者自己的环境导出的，cuda版本需要更改，使用时需要注意。
+
+若根据requirements安装完依赖后仍显示有软件包未安装则自行安装即可。
+
+### 2.pycharm中使用：
+
+安装完所有依赖，设置好正确的python解释器。启动imagebind_multimodel下的app.py文件（可能产生版本警告，但不影响正常使用），再在本地终端输入http-server即可访问。
+
+### 3.终端中使用：
+
+1. 激活conda环境
+
+   ```bash
+   conda activate mulcryptdb
+   ```
+
+2. 启动后端服务
+
+   ```bash
+   # 进入后端程序目录
+   cd D:\mulcryptdb\imagebind_multimodel   
+   
+   # 启动Flask应用
+   python app.py
+   ```
+
+3. 启动前端服务
+
+   ```bash
+   # 在新终端中，进入项目目录
+   cd D:\mulcryptdb\imagebind_multimodel
+   
+   # 启动http-server
+   http-server
+   ```
+
+4. 打开显示的本地端口地址，即可访问演示系统。默认地址为http://127.0.0.1:8080
+
+## 六、补充文件说明
+
+原始数据集（ESC-50_classified、ESC-50_origin、MSCOCO_classified、MSCOCO_origin）及其用imagebind生成的特征向量（img_text_feature），网盘链接： https://pan.baidu.com/s/1WXenVevHDLmebBgebqSOSg?pwd=eb53 
 
 文件结构：
 
