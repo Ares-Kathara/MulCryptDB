@@ -1,0 +1,612 @@
+/* 拖拽区域样式 */
+.dropZone {
+    position: relative;
+    width: 100%;
+    border: 2px dashed #ccc;
+    margin: 20px auto;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.dropZone.large {
+    width: 480px;
+    height: 320px;
+}
+
+.dropZone.small {
+    max-width: 400px;
+    height: 60px;
+}
+
+/* 提示文本样式 */
+.prompt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* 预览音频样式 */
+.preview-audio {
+    width: 100%;
+    display: none;
+}
+
+/* 预览图片样式 */
+.preview-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 高度多出来的裁剪 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    z-index: 2;
+}
+
+/* 音乐项样式 */
+.music-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 控制按钮样式 */
+.controls {
+    margin-top: 5px;
+}
+
+/* 提交按钮样式 */
+.submitBtn {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 文件选择按钮样式 */
+.fileInput {
+    display: none;
+}
+
+/* tab 样式 */
+.tab-active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    /* 下划线更粗 */
+    text-underline-offset: 7px;
+    /* 下划线离字远一点 */
+
+    font-weight: bold;
+}
+
+.tab:hover {
+    color: black;
+    /* text-decoration: underline; */
+}
+
+/* 拖拽区域样式 */
+#drop_area {
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-y: auto;
+}
+
+#drop_area img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 音频容器样式 */
+.audio-container {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.audio-container audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.audio-container a {
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.audio-container a:hover {
+    text-decoration: underline;
+}
+
+/* 高亮样式 */
+.highlight {
+    border-color: #000 !important;
+}
+
+/* 新增的样式 */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #465a69;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 30px 0px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mt-20 {
+    margin-top: 1rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tabs a {
+    padding: 10px 40px;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #465a69;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+}
+
+.tabs a:hover,
+.tabs a.tab-active {
+    color: #2196F3;
+    border-bottom: 4px solid #2196F3;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.px-8 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.ml-5 {
+    margin-left: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* 预选图片样式 */
+.preselect-image {
+    width: 240px;
+    height: 160px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    object-fit: cover;
+    /* 高超出部分直接裁剪 */
+}
+
+.preselect-image:hover {
+    border-color: #2196F3;
+}
+
+/* 添加从model4.html和model5.html中提取的样式 */
+.preselect-audio-container {
+    position: relative;
+    flex: 0 1 auto;
+    margin: 0 10px;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+}
+
+.preselect-audio-container:hover {
+    border-color: lightblue;
+}
+
+.preselect-audio-container p {
+    text-align: center;
+}
+
+input[type="text"] {
+    text-align: center;
+}
+
+#textInput::placeholder {
+    text-align: center;
+}
+
+#logContainer {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#logContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+#logContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#logContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#logContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.lr-div {
+    display: flex;
+    width: 100%;
+}
+
+.left-div {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-div {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lr-div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.left-div {
+    flex: 1;
+    min-width: 0;
+}
+
+.right-div {
+    flex: 1;
+    min-width: 0;
+}
+
+#block1,
+#block2 {
+    margin-bottom: 2rem;
+}
+
+.image-upload-section {
+    flex: 1;
+    min-height: 400px;
+}
+
+.audio-preview-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: 45px; */
+}
+
+/* 登录页面样式 */
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* 管理员控制台样式 */
+.admin-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.admin-sidebar {
+    width: 280px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+.view-btn.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    display: none;
+}
+
+.grid-view.active {
+    display: grid;
+}
+
+.table-view {
+    display: none;
+}
+
+.table-view.active {
+    display: block;
+}
+
+.table-view table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-view th,
+.table-view td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-body {
+    padding: 1rem;
+}
+
+.preview-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.preview-item {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* log 样式 */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    /* 在父容器中水平居中 */
+}
+
+.result-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+}
+
+.result-card.scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.result-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.token-list,
+.hash-list {
+    overflow-y: auto;
+}
+
+.token-pair {
+    font-family: monospace;
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.token-pair::before {
+    content: "└─";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+.r-level {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.hash-item {
+    font-family: monospace;
+    padding: 4px 0;
+}
+
+/* 自定义滚动条样式 */
+.scrollable::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.center1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

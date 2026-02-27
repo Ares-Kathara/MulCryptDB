@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ImageBind by Meta AI_files/ico.png">
+    <title>模型三 - 面向语义检索的多模态加密数据系统</title>
+    <script src="./model3.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./ImageBind by Meta AI_files/index-ecd6f458.css">
+</head>
+
+<body>
+
+    <div class="flex items-center justify-center w-full px-2 py-3">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+            class="absolute left-0 mx-6 h-[28px] md:hidden" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+        </svg>
+        <a aria-current="page" class="ml-5 text-2xl leading-tight text-center md:mx-6 active md:!text-start active"
+            href="./index.html" style="font-weight: 700;">
+            <div style=" font-family: 'Segoe UI', 'Arial'">MulCryptDB</div>
+        </a>
+        <div class="hidden ml-auto md:flex [&amp;>*]:flex [&amp;>*]:items-center h-full">
+            <a class="hover:underline hover:opacity-70 underline-offset-4 active:bg-transparent hover:bg-transparent mr-10 font-medium text-base false"
+                href="./model1.html">多模态检索系统</a>
+            <a href="./admin_dashboard.html" rel="noreferrer"
+                class="hover:underline underline-offset-4 active:bg-transparent hover:bg-transparent hover:opacity-70 mr-10 font-medium text-base">管理控制台
+            </a>
+            <a href="#" target="_blank" rel="noreferrer"
+                class="hover:opacity-70 active:bg-transparent hover:bg-transparent mr-10 min-w-[24px]">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="30"
+                    width="30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="min-h-screen">
+        <div class="tabs">
+            <a href="./model1.html">图像→加密音频</a>
+            <a href="./model2.html">音频→加密图像</a>
+            <a href="./model3.html" class="tab-active">文本→多模态检索</a>
+            <a href="./model4.html">音文联合检索</a>
+            <a href="./model5.html">音图联合检索</a>
+        </div>
+
+        <div class="content">
+            <div class="max-w-[60rem] mx-auto mt-10 mb-4 text-center">
+                <h2 class="text-3xl md:text-4xl text-gray-700">加密文本驱动的跨模态检索系统</h2>
+            </div>
+            <div class="max-w-[100rem] mx-auto mb-20 text-center">
+                <p
+                    style="font-size: 1.15rem; text-indent: 2em; line-height: 2rem; text-align: justify; margin-left: 8rem; margin-right: 8rem;">
+                    系统支持加密文本驱动的多模态检索，利用SM4算法保障文本密态存储，结合ImageBind与MLP网络将文本转为语义哈希编码。通过密文索引与汉明距离检索，用户可在密态下实现文本到图像、音频等多模态数据的语义匹配。全流程引入SLH-DSA签名、容错分片及差分隐私机制，提升数据安全与隐私保护能力。
+                </p>
+            </div>
+            <section class="w-full mb-20">
+                <div class="flex flex-col w-full max-w-[100rem] px-1 justify-center mx-auto">
+                    <div class="lr-div">
+                        <div id="block1" class="left-div">
+                            <div class="flex mb-5">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                    class="my-auto mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1-.708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z">
+                                    </path>
+                                </svg>
+                                <h1 class="text-md">输入加密文本</h1>
+                            </div>
+                            <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                                <div class="flex flex-col items-center mb-10">
+                                    <input type="text"
+                                        class="flex-grow max-w-md p-2 border border-gray-300 rounded-md text-center"
+                                        placeholder="火车" style="width: calc(100% - 2rem);">
+                                    <button id="submitText" class="mt-4 p-2 bg-blue-500 text-white rounded-md"
+                                        style="width: 8rem;">检索</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="block2" class="right-div">
+                            <div id="resultContainer" class="flex flex-col justify-between mt-4">
+                                <div class="flex mb-5 content-center">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                        class="my-auto mr-2" height="1em" width="1em"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1-.708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z">
+                                        </path>
+                                    </svg>
+                                    <h1 class="text-md">加密多媒体检索结果</h1>
+                                </div>
+                                <div id="audioContainer" class="flex justify-center"></div>
+                                <div id="imageContainer" class="flex justify-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="block3" class="flex flex-col justify-between mt-4">
+                        <div class="flex mb-5 content-center">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                class="my-auto mr-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1-.708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z">
+                                </path>
+                            </svg>
+                            <h1 class="text-md">多媒体检索过程展示</h1>
+                        </div>
+                    </div>
+                    <div id="logContainer" class="log-container">
+                        <div class="card-container">
+                            <div class="card-row">
+                                <!-- 性能指标 -->
+                                <div class="result-card" id="performance-card">
+                                    <h3 style="display: none;">🔧 核心性能指标</h3>
+                                    <div id="performance-metrics"></div>
+                                </div>
+                            </div>
+
+                            <div class="card-row">
+                                <!-- 加密过程 -->
+                                <div class="result-card scrollable" id="encryption-card">
+                                    <h3 style="display: none;">🔐 检索用户上传查询令牌</h3>
+                                    <div id="token-tree" class="token-list"></div>
+                                </div>
+
+                                <!-- 检索结果 -->
+                                <div class="result-card scrollable" id="results-card">
+                                    <h3 style="display: none;">🔍 云服务返回检索结果</h3>
+                                    <div id="search-results" class="hash-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer relative flex flex-row items-center justify-between bottom-0 p-4 px-6 undefined">
+        <div class="block md:flex text-xs md:text-sm">
+            <div class="inline-block p-2"><span>© 2025 数据安全实验室 | 多模态加密数据库中心</span></div>
+            <div class="inline-block p-2"><a href="#"
+                    class="hover:underline underline-offset-4 hover:opacity-70">数据安全合规声明</a></div>
+        </div>
+        <!-- <img class="mx-4 w-20 md:w-24" src="./ImageBind by Meta AI_files/metaai_logo_positive-8fc7941e.png"
+            alt="商密算法认证标识"> -->
+    </footer>
+
+    <noscript>
+        <h1>请启用JavaScript以运行本应用</h1>
+    </noscript>
+</body>
+
+</html>

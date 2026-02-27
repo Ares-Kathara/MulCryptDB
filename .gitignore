@@ -1,0 +1,54 @@
+# 1. 大模型权重文件 (全局屏蔽所有 pth，防止意外上传大文件)
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.safetensors
+*.h5
+
+# 2. Python 缓存和虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.conda/
+
+# 3. 敏感信息与配置文件
+.env
+.flaskenv
+*.key
+*.pem
+
+# 4. 动态生成的数据、上传的测试文件、日志
+uploads/
+temp/
+tmp/
+*.log
+*.db
+instance/
+
+# 5. 编辑器/IDE 生成的隐藏配置文件夹
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 6. 操作系统自动生成的垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 7. 特定大数据文件 (必须忽略)
+# ImageBind 生成的 6.4GB 特征文件
+imagebind_multimodel/dataset/img_text_feature
+# 原始图片和音频文件夹 (网盘下载)
+imagebind_multimodel/dataset/ESC-50_classified/
+imagebind_multimodel/dataset/ESC-50_origin/
+imagebind_multimodel/dataset/MSCOCO_classified/
+imagebind_multimodel/dataset/MSCOCO_origin/
+
+# 8. 豁免清单 (这里的文件即使上面屏蔽了，也会强制上传)
+# 上传自己训练的 MLP 哈希模型 (虽然上面屏蔽了 *.pth，但这行会让它们被上传)
+!imagebind_multimodel/hash_model_save/*.pth

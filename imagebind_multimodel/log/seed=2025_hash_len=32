@@ -1,0 +1,525 @@
+log_dir: log\seed=2025_hash_len=32
+=============== seed=2025--hash_len=32--Total epochs:20 ===============
+...Training is beginning...
+train text pair num : 94629
+test text pair num : 23658
+make dataset and dataloader successfully!!
+train text pair num : 1600
+test text pair num : 400
+make dataset and dataloader successfully!!
+MLP_param: 12988512
+init end!!!
+Training Hash Fuction...
+epoch : 1, loss : 4.772440, lr : 0.001000
+test loss : 4.923907169542814
+epoch : 2, loss : 4.512941, lr : 0.001000
+test loss : 4.730934311214246
+epoch : 3, loss : 4.474925, lr : 0.001000
+test loss : 4.710305823777851
+epoch : 4, loss : 4.455278, lr : 0.001000
+test loss : 4.703127477043553
+epoch : 5, loss : 4.441453, lr : 0.001000
+test loss : 4.703794775511089
+epoch : 6, loss : 4.430228, lr : 0.001000
+test loss : 4.7025247573852536
+epoch : 7, loss : 4.421212, lr : 0.001000
+test loss : 4.700869876460025
+epoch : 8, loss : 4.413950, lr : 0.001000
+test loss : 4.701129652324476
+epoch : 9, loss : 4.408611, lr : 0.001000
+test loss : 4.701441792437905
+epoch : 10, loss : 4.403925, lr : 0.001000
+test loss : 4.701828730733771
+epoch : 11, loss : 4.399093, lr : 0.001000
+test loss : 4.70356371528224
+epoch : 12, loss : 4.396243, lr : 0.001000
+test loss : 4.702568812119333
+epoch : 13, loss : 4.394145, lr : 0.001000
+test loss : 4.702569291466161
+epoch : 14, loss : 4.390634, lr : 0.001000
+test loss : 4.703941581123754
+epoch : 15, loss : 4.388292, lr : 0.001000
+test loss : 4.705008981102392
+epoch : 16, loss : 4.385794, lr : 0.001000
+test loss : 4.70621472408897
+epoch : 17, loss : 4.384191, lr : 0.001000
+test loss : 4.7067180307287915
+epoch : 18, loss : 4.382222, lr : 0.001000
+test loss : 4.707418961273996
+epoch : 19, loss : 4.381333, lr : 0.001000
+test loss : 4.707259775462903
+epoch : 20, loss : 4.379419, lr : 0.001000
+test loss : 4.706838208750675
+save MLP model dir: hash_model_save\hash_32_epoch_20.pt
+**********Save the hash model successfully.**********
+train total time:1952.769082069397
+log_dir: log\seed=2025_hash_len=32
+=============== seed=2025--hash_len=32--Total epochs:20 ===============
+...Training is beginning...
+train text pair num : 94629
+test text pair num : 23658
+make dataset and dataloader successfully!!
+train text pair num : 1600
+test text pair num : 400
+make dataset and dataloader successfully!!
+MLP_param: 12988512
+init end!!!
+Training Hash Fuction...
+epoch : 1, loss : 4.772440, lr : 0.001000
+test loss : 4.9238629391318876
+epoch : 2, loss : 4.512680, lr : 0.001000
+test loss : 4.728946362043682
+epoch : 3, loss : 4.474847, lr : 0.001000
+test loss : 4.709261826465005
+epoch : 4, loss : 4.454931, lr : 0.001000
+test loss : 4.703119533940366
+epoch : 5, loss : 4.441668, lr : 0.001000
+test loss : 4.701075659300152
+epoch : 6, loss : 4.429804, lr : 0.001000
+test loss : 4.70257080730639
+epoch : 7, loss : 4.421006, lr : 0.001000
+test loss : 4.700413636157387
+epoch : 8, loss : 4.414229, lr : 0.001000
+test loss : 4.699750506250482
+epoch : 9, loss : 4.408556, lr : 0.001000
+test loss : 4.700323674553319
+epoch : 10, loss : 4.403782, lr : 0.001000
+test loss : 4.702305821368569
+epoch : 11, loss : 4.399096, lr : 0.001000
+test loss : 4.701082066485756
+epoch : 12, loss : 4.395951, lr : 0.001000
+test loss : 4.702237169366134
+epoch : 13, loss : 4.393828, lr : 0.001000
+test loss : 4.70128627827293
+epoch : 14, loss : 4.390313, lr : 0.001000
+test loss : 4.703838160163478
+epoch : 15, loss : 4.388188, lr : 0.001000
+test loss : 4.704237418425711
+epoch : 16, loss : 4.386018, lr : 0.001000
+test loss : 4.706929701252988
+epoch : 17, loss : 4.383977, lr : 0.001000
+test loss : 4.7061379959708765
+epoch : 18, loss : 4.382474, lr : 0.001000
+test loss : 4.707328191556429
+epoch : 19, loss : 4.381060, lr : 0.001000
+test loss : 4.707458478526065
+epoch : 20, loss : 4.379761, lr : 0.001000
+test loss : 4.705113965586612
+save MLP model dir: hash_model_save\hash_32_epoch_20.pt
+**********Save the hash model successfully.**********
+train total time:1842.9700474739075
+log_dir: log\seed=2025_hash_len=32
+=============== seed=2025--hash_len=32--Total epochs:100 ===============
+...Training is beginning...
+train text pair num : 94629
+test text pair num : 23658
+make dataset and dataloader successfully!!
+train text pair num : 1600
+test text pair num : 400
+make dataset and dataloader successfully!!
+MLP_param: 12988512
+init end!!!
+Training Hash Fuction...
+image text : running loss/total batch : 4.744587
+audio text : running loss/total batch : 6.244685
+epoch : 1, lr : 0.001000
+test loss : 4.9238629391318876
+image text : running loss/total batch : 4.505009
+audio text : running loss/total batch : 4.918175
+epoch : 2, lr : 0.001000
+test loss : 4.728946362043682
+image text : running loss/total batch : 4.472339
+audio text : running loss/total batch : 4.607424
+epoch : 3, lr : 0.001000
+test loss : 4.709261826465005
+image text : running loss/total batch : 4.453556
+audio text : running loss/total batch : 4.527615
+epoch : 4, lr : 0.001000
+test loss : 4.703119533940366
+image text : running loss/total batch : 4.440890
+audio text : running loss/total batch : 4.482825
+epoch : 5, lr : 0.001000
+test loss : 4.701075659300152
+image text : running loss/total batch : 4.430031
+audio text : running loss/total batch : 4.417823
+epoch : 6, lr : 0.001000
+test loss : 4.70257080730639
+image text : running loss/total batch : 4.421376
+audio text : running loss/total batch : 4.401458
+epoch : 7, lr : 0.001000
+test loss : 4.700413636157387
+image text : running loss/total batch : 4.415239
+audio text : running loss/total batch : 4.360877
+epoch : 8, lr : 0.001000
+test loss : 4.699750506250482
+image text : running loss/total batch : 4.409810
+audio text : running loss/total batch : 4.342271
+epoch : 9, lr : 0.001000
+test loss : 4.700323674553319
+image text : running loss/total batch : 4.405268
+audio text : running loss/total batch : 4.325197
+epoch : 10, lr : 0.001000
+test loss : 4.702305821368569
+image text : running loss/total batch : 4.400769
+audio text : running loss/total batch : 4.310676
+epoch : 11, lr : 0.001000
+test loss : 4.701082066485756
+image text : running loss/total batch : 4.397857
+audio text : running loss/total batch : 4.295226
+epoch : 12, lr : 0.001000
+test loss : 4.702237169366134
+image text : running loss/total batch : 4.395701
+audio text : running loss/total batch : 4.294837
+epoch : 13, lr : 0.001000
+test loss : 4.70128627827293
+image text : running loss/total batch : 4.392351
+audio text : running loss/total batch : 4.282639
+epoch : 14, lr : 0.001000
+test loss : 4.703838160163478
+image text : running loss/total batch : 4.390380
+audio text : running loss/total batch : 4.272313
+epoch : 15, lr : 0.001000
+test loss : 4.704237418425711
+image text : running loss/total batch : 4.388365
+audio text : running loss/total batch : 4.261922
+epoch : 16, lr : 0.001000
+test loss : 4.706929701252988
+image text : running loss/total batch : 4.386460
+audio text : running loss/total batch : 4.252743
+epoch : 17, lr : 0.001000
+test loss : 4.7061379959708765
+image text : running loss/total batch : 4.384914
+audio text : running loss/total batch : 4.253507
+epoch : 18, lr : 0.001000
+test loss : 4.707328191556429
+image text : running loss/total batch : 4.383583
+audio text : running loss/total batch : 4.247689
+epoch : 19, lr : 0.001000
+test loss : 4.707458478526065
+image text : running loss/total batch : 4.382309
+audio text : running loss/total batch : 4.245089
+epoch : 20, lr : 0.001000
+test loss : 4.705113965586612
+image text : running loss/total batch : 4.380461
+audio text : running loss/total batch : 4.239884
+epoch : 21, lr : 0.001000
+test loss : 4.7066078010358305
+image text : running loss/total batch : 4.379004
+audio text : running loss/total batch : 4.236756
+epoch : 22, lr : 0.001000
+test loss : 4.708458089828492
+image text : running loss/total batch : 4.378883
+audio text : running loss/total batch : 4.241173
+epoch : 23, lr : 0.001000
+test loss : 4.707999495456093
+image text : running loss/total batch : 4.377855
+audio text : running loss/total batch : 4.231955
+epoch : 24, lr : 0.001000
+test loss : 4.708163469716122
+image text : running loss/total batch : 4.376779
+audio text : running loss/total batch : 4.228408
+epoch : 25, lr : 0.001000
+test loss : 4.709032427637201
+image text : running loss/total batch : 4.374963
+audio text : running loss/total batch : 4.221413
+epoch : 26, lr : 0.001000
+test loss : 4.707995791184275
+image text : running loss/total batch : 4.373930
+audio text : running loss/total batch : 4.221887
+epoch : 27, lr : 0.001000
+test loss : 4.709749221801758
+image text : running loss/total batch : 4.374336
+audio text : running loss/total batch : 4.212918
+epoch : 28, lr : 0.001000
+test loss : 4.710492013630114
+image text : running loss/total batch : 4.372733
+audio text : running loss/total batch : 4.213629
+epoch : 29, lr : 0.001000
+test loss : 4.709949581246627
+image text : running loss/total batch : 4.372175
+audio text : running loss/total batch : 4.215846
+epoch : 30, lr : 0.001000
+test loss : 4.710107198514437
+image text : running loss/total batch : 4.370527
+audio text : running loss/total batch : 4.215975
+epoch : 31, lr : 0.001000
+test loss : 4.711670674775776
+image text : running loss/total batch : 4.370545
+audio text : running loss/total batch : 4.207971
+epoch : 32, lr : 0.001000
+test loss : 4.7124043790917645
+image text : running loss/total batch : 4.370004
+audio text : running loss/total batch : 4.213647
+epoch : 33, lr : 0.001000
+test loss : 4.7123698134171335
+image text : running loss/total batch : 4.369030
+audio text : running loss/total batch : 4.212061
+epoch : 34, lr : 0.001000
+test loss : 4.714141958638241
+image text : running loss/total batch : 4.369069
+audio text : running loss/total batch : 4.205558
+epoch : 35, lr : 0.001000
+test loss : 4.713970525641191
+image text : running loss/total batch : 4.367559
+audio text : running loss/total batch : 4.205587
+epoch : 36, lr : 0.001000
+test loss : 4.714755444777639
+image text : running loss/total batch : 4.366795
+audio text : running loss/total batch : 4.197245
+epoch : 37, lr : 0.001000
+test loss : 4.715712981475027
+image text : running loss/total batch : 4.366849
+audio text : running loss/total batch : 4.195042
+epoch : 38, lr : 0.001000
+test loss : 4.71498879131518
+image text : running loss/total batch : 4.366152
+audio text : running loss/total batch : 4.200435
+epoch : 39, lr : 0.001000
+test loss : 4.7161878359945195
+image text : running loss/total batch : 4.365532
+audio text : running loss/total batch : 4.202872
+epoch : 40, lr : 0.001000
+test loss : 4.7176041879151995
+image text : running loss/total batch : 4.365749
+audio text : running loss/total batch : 4.202906
+epoch : 41, lr : 0.001000
+test loss : 4.71641654215361
+image text : running loss/total batch : 4.364860
+audio text : running loss/total batch : 4.198420
+epoch : 42, lr : 0.001000
+test loss : 4.717282844844617
+image text : running loss/total batch : 4.363733
+audio text : running loss/total batch : 4.195425
+epoch : 43, lr : 0.001000
+test loss : 4.718573038201583
+image text : running loss/total batch : 4.364290
+audio text : running loss/total batch : 4.196403
+epoch : 44, lr : 0.001000
+test loss : 4.717900479467292
+image text : running loss/total batch : 4.363706
+audio text : running loss/total batch : 4.191125
+epoch : 45, lr : 0.001000
+test loss : 4.7198717067116185
+image text : running loss/total batch : 4.363130
+audio text : running loss/total batch : 4.191894
+epoch : 46, lr : 0.001000
+test loss : 4.719628341574418
+image text : running loss/total batch : 4.362736
+audio text : running loss/total batch : 4.193308
+epoch : 47, lr : 0.001000
+test loss : 4.719714503539236
+image text : running loss/total batch : 4.361670
+audio text : running loss/total batch : 4.188316
+epoch : 48, lr : 0.001000
+test loss : 4.71941301446212
+image text : running loss/total batch : 4.362271
+audio text : running loss/total batch : 4.189877
+epoch : 49, lr : 0.001000
+test loss : 4.720173261040135
+image text : running loss/total batch : 4.361277
+audio text : running loss/total batch : 4.182995
+epoch : 50, lr : 0.001000
+test loss : 4.720075547067743
+image text : running loss/total batch : 4.361750
+audio text : running loss/total batch : 4.184814
+epoch : 51, lr : 0.001000
+test loss : 4.722563721004286
+image text : running loss/total batch : 4.361023
+audio text : running loss/total batch : 4.179523
+epoch : 52, lr : 0.001000
+test loss : 4.722257225137008
+image text : running loss/total batch : 4.361537
+audio text : running loss/total batch : 4.182293
+epoch : 53, lr : 0.001000
+test loss : 4.720704718639976
+image text : running loss/total batch : 4.360835
+audio text : running loss/total batch : 4.175210
+epoch : 54, lr : 0.001000
+test loss : 4.722645056875129
+image text : running loss/total batch : 4.360356
+audio text : running loss/total batch : 4.179527
+epoch : 55, lr : 0.001000
+test loss : 4.72205813809445
+image text : running loss/total batch : 4.359876
+audio text : running loss/total batch : 4.182079
+epoch : 56, lr : 0.001000
+test loss : 4.723470461995978
+image text : running loss/total batch : 4.359633
+audio text : running loss/total batch : 4.181400
+epoch : 57, lr : 0.001000
+test loss : 4.722330226396259
+image text : running loss/total batch : 4.359099
+audio text : running loss/total batch : 4.185735
+epoch : 58, lr : 0.001000
+test loss : 4.7263971780475815
+image text : running loss/total batch : 4.358855
+audio text : running loss/total batch : 4.177824
+epoch : 59, lr : 0.001000
+test loss : 4.723679078252692
+image text : running loss/total batch : 4.359249
+audio text : running loss/total batch : 4.173676
+epoch : 60, lr : 0.001000
+test loss : 4.726758567910445
+image text : running loss/total batch : 4.358357
+audio text : running loss/total batch : 4.175075
+epoch : 61, lr : 0.001000
+test loss : 4.724330284720973
+image text : running loss/total batch : 4.358511
+audio text : running loss/total batch : 4.170272
+epoch : 62, lr : 0.001000
+test loss : 4.7235862531160056
+image text : running loss/total batch : 4.358208
+audio text : running loss/total batch : 4.183910
+epoch : 63, lr : 0.001000
+test loss : 4.726865504917345
+image text : running loss/total batch : 4.357999
+audio text : running loss/total batch : 4.180619
+epoch : 64, lr : 0.001000
+test loss : 4.726542889444452
+image text : running loss/total batch : 4.357630
+audio text : running loss/total batch : 4.180267
+epoch : 65, lr : 0.001000
+test loss : 4.727540287218596
+image text : running loss/total batch : 4.357833
+audio text : running loss/total batch : 4.177705
+epoch : 66, lr : 0.001000
+test loss : 4.727298596030788
+image text : running loss/total batch : 4.358088
+audio text : running loss/total batch : 4.185195
+epoch : 67, lr : 0.001000
+test loss : 4.727821698941683
+image text : running loss/total batch : 4.357204
+audio text : running loss/total batch : 4.182392
+epoch : 68, lr : 0.001000
+test loss : 4.728325228942068
+image text : running loss/total batch : 4.357103
+audio text : running loss/total batch : 4.182205
+epoch : 69, lr : 0.001000
+test loss : 4.728859018024646
+image text : running loss/total batch : 4.356388
+audio text : running loss/total batch : 4.169327
+epoch : 70, lr : 0.001000
+test loss : 4.729453541103163
+image text : running loss/total batch : 4.356048
+audio text : running loss/total batch : 4.186586
+epoch : 71, lr : 0.001000
+test loss : 4.7292366354089035
+image text : running loss/total batch : 4.355950
+audio text : running loss/total batch : 4.182144
+epoch : 72, lr : 0.001000
+test loss : 4.731539563128822
+image text : running loss/total batch : 4.356777
+audio text : running loss/total batch : 4.180294
+epoch : 73, lr : 0.001000
+test loss : 4.730951334300794
+image text : running loss/total batch : 4.356261
+audio text : running loss/total batch : 4.180188
+epoch : 74, lr : 0.001000
+test loss : 4.729713304419267
+image text : running loss/total batch : 4.355687
+audio text : running loss/total batch : 4.173374
+epoch : 75, lr : 0.001000
+test loss : 4.732241620515522
+image text : running loss/total batch : 4.355307
+audio text : running loss/total batch : 4.169105
+epoch : 76, lr : 0.001000
+test loss : 4.731181508616397
+image text : running loss/total batch : 4.354983
+audio text : running loss/total batch : 4.172921
+epoch : 77, lr : 0.001000
+test loss : 4.731803580334312
+image text : running loss/total batch : 4.355190
+audio text : running loss/total batch : 4.171582
+epoch : 78, lr : 0.001000
+test loss : 4.730601508993852
+image text : running loss/total batch : 4.354770
+audio text : running loss/total batch : 4.178124
+epoch : 79, lr : 0.001000
+test loss : 4.732171543020951
+image text : running loss/total batch : 4.355070
+audio text : running loss/total batch : 4.175686
+epoch : 80, lr : 0.001000
+test loss : 4.734319486116108
+image text : running loss/total batch : 4.354057
+audio text : running loss/total batch : 4.170253
+epoch : 81, lr : 0.001000
+test loss : 4.735379028320312
+image text : running loss/total batch : 4.354550
+audio text : running loss/total batch : 4.174830
+epoch : 82, lr : 0.001000
+test loss : 4.733578845074303
+image text : running loss/total batch : 4.353944
+audio text : running loss/total batch : 4.173936
+epoch : 83, lr : 0.001000
+test loss : 4.73623480545847
+image text : running loss/total batch : 4.353997
+audio text : running loss/total batch : 4.178376
+epoch : 84, lr : 0.001000
+test loss : 4.734121957578157
+image text : running loss/total batch : 4.353690
+audio text : running loss/total batch : 4.170700
+epoch : 85, lr : 0.001000
+test loss : 4.7343994366495235
+image text : running loss/total batch : 4.353647
+audio text : running loss/total batch : 4.175020
+epoch : 86, lr : 0.001000
+test loss : 4.735485036749589
+image text : running loss/total batch : 4.353864
+audio text : running loss/total batch : 4.175339
+epoch : 87, lr : 0.001000
+test loss : 4.735965081265098
+image text : running loss/total batch : 4.353733
+audio text : running loss/total batch : 4.175979
+epoch : 88, lr : 0.001000
+test loss : 4.736784172058106
+image text : running loss/total batch : 4.353362
+audio text : running loss/total batch : 4.171503
+epoch : 89, lr : 0.001000
+test loss : 4.737310858776695
+image text : running loss/total batch : 4.353417
+audio text : running loss/total batch : 4.167832
+epoch : 90, lr : 0.001000
+test loss : 4.736937673468339
+image text : running loss/total batch : 4.353620
+audio text : running loss/total batch : 4.170741
+epoch : 91, lr : 0.001000
+test loss : 4.73712312798751
+image text : running loss/total batch : 4.352988
+audio text : running loss/total batch : 4.176417
+epoch : 92, lr : 0.001000
+test loss : 4.736508846282959
+image text : running loss/total batch : 4.352726
+audio text : running loss/total batch : 4.169576
+epoch : 93, lr : 0.001000
+test loss : 4.736533840079057
+image text : running loss/total batch : 4.352767
+audio text : running loss/total batch : 4.174990
+epoch : 94, lr : 0.001000
+test loss : 4.7379827976226805
+image text : running loss/total batch : 4.352926
+audio text : running loss/total batch : 4.176364
+epoch : 95, lr : 0.001000
+test loss : 4.737241980904027
+image text : running loss/total batch : 4.352365
+audio text : running loss/total batch : 4.173491
+epoch : 96, lr : 0.001000
+test loss : 4.7401598654295265
+image text : running loss/total batch : 4.352722
+audio text : running loss/total batch : 4.181236
+epoch : 97, lr : 0.001000
+test loss : 4.739854197753103
+image text : running loss/total batch : 4.352662
+audio text : running loss/total batch : 4.175768
+epoch : 98, lr : 0.001000
+test loss : 4.739650545622173
+image text : running loss/total batch : 4.351649
+audio text : running loss/total batch : 4.172190
+epoch : 99, lr : 0.001000
+test loss : 4.742821033377396
+image text : running loss/total batch : 4.351499
+audio text : running loss/total batch : 4.173047
+epoch : 100, lr : 0.001000
+test loss : 4.740460094652678
+save MLP model dir: hash_model_save\hash_32_epoch_100.pt
+**********Save the hash model successfully.**********
+train total time:6976.350414276123
